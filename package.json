@@ -1,0 +1,47 @@
+{
+  "name": "craftdrive-challenge",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "NODE_ENV=test PORT=4000 jest --detectOpenHandles",
+    "build": "tsc",
+    "start": "node dist/server.js"
+  },
+  "author": "hi@joynal.dev",
+  "license": "MIT",
+  "dependencies": {
+    "@koa/cors": "^3.1.0",
+    "apollo-server": "^2.16.1",
+    "apollo-server-koa": "^2.16.1",
+    "apollo-server-testing": "^2.16.1",
+    "bcrypt": "^5.0.0",
+    "dotenv": "^8.2.0",
+    "graphql": "^15.3.0",
+    "graphql-scalars": "^1.2.6",
+    "graphql-tools": "^6.0.16",
+    "jsonwebtoken": "^8.5.1",
+    "koa": "^2.13.0",
+    "nedb-promises": "^4.0.4",
+    "winston": "^3.3.3",
+    "winston-daily-rotate-file": "^4.5.0"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^3.0.0",
+    "@types/jsonwebtoken": "^8.5.0",
+    "eslint": "^7.6.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "jest": "^26.3.0",
+    "ts-jest": "^26.2.0",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.7"
+  },
+  "jest": {
+    "testPathIgnorePatterns": [
+      "/node_modules/"
+    ]
+  },
+  "engines": {
+    "node": ">=10"
+  }
+}
